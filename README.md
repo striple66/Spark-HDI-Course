@@ -7,6 +7,7 @@ This repository contains the materials for the course entitled: _Spark with HDIn
 ### Spark on HDInsight Overview
   - Spark Clusters on HDInsight
     + Available Spark Clusters
+    + HDI Versioning and Support
     + Understanding Premium Features, API Specific Features
       * R Server on Spark
   - Interactive Notebooks with Jupyter and Zeppelin
@@ -32,6 +33,7 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     - Local and Physical Plans
     - Code Generation
   - Caching and Persistence for Reuse
+
 ### Spark SQL/DataFrames - Relational Data Processing with Spark
   - Sharing Metastore and Storage Accounts with Hadoop/Hive Clusters and Spark Clusters
   - DataFrames API - Collection of Rows with a Consistent Schema
@@ -42,10 +44,12 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     + Broadcat Joins versus Merge Joins
   - Creating Custom UDFs for Spark SQL
   - Caching Spark DataFrames, Saving to Parquet
+
 #### Datasets - Compile Time Strong Typing
   - Interoperability with RDDs, DataFrames, and Local Collections
   - Easier Functional Transformations
   - Grouped Operations on Datasets
+
 ### Spark Job Execution, Performance Tuning, Tracking and Debugging
   - Jobs, Stages, and Tasks
   - Spark Contexts, Applications, the Driver Program and Spark Executors
@@ -56,6 +60,7 @@ This repository contains the materials for the course entitled: _Spark with HDIn
   - Managing Interactive Livy Sessions and their Resources
   - Monitoring Spark Jobs with Spark UI
   - Viewing Spark Job Graphs, and Understanding Spark Stages
+
 ### Spark Streaming
   - Creating Spark Streaming Applications Using Spark DStreams APIs
     - DStreams, Stateful, and Stateless Streams
@@ -65,6 +70,7 @@ This repository contains the materials for the course entitled: _Spark with HDIn
   - Creating Spark Structured Streams
     - Using DataFrames and DataSets API to Create Streaming DataFrames and DataSets
   - Window Transformations for Stateful and Stateless Operations
+
 ### Spark Machine Learning
   - MLLib and Spark ML - Understanding API Patterns
   - Featurizing DataFrames using Transformers
@@ -74,6 +80,7 @@ This repository contains the materials for the course entitled: _Spark with HDIn
   - Using Evaluators to Evaluate Machine Learning Models
   - Unsupervised Learning and Clustering
   - Managing Models with ModelDB
+
 ### Spark GraphX/GraphFrames
   - Understanding Graph Analytics and Graph Operators
     - Vertex and Edge Classes
