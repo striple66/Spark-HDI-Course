@@ -134,15 +134,3 @@ This repository contains the materials for the course entitled: _Spark with HDIn
 + auto-scale spark
   * might be ready for demo
   * keep it high level
-
-
-+ Update on github
-+ meet next on thurs
-  * review hdi content
-+ *show full schedule*
-  * provide lab timings
-  * less detail than above
-+ share any decks
-+ techreadytv for additional content
-+ 
-
