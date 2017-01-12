@@ -4,11 +4,11 @@ This repository contains the materials for the course entitled: _Spark with HDIn
 
 ## Detailed Syllabus
 
-### Spark on HDInsight Overview
+### Spark on HDInsight Overview 
   - Spark Clusters on HDInsight
     + Available Spark Clusters
     + HDI Versioning and Support
-    + Understanding Premium Features, API Specific Features
+    + API Specific Features
       * R Server on Spark
   - Interactive Notebooks with Jupyter and Zeppelin
     + Using External Packages with Jupyter
@@ -29,10 +29,10 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     - Functions on RDD - Transforms vs Actions
   - Fault Tolerance with Shared Memory Partitioned Collections and DAGs
   - The Art of Being Lazy - Tracking Lineage
-  - Query Optimization with Tungsten and Catalyst
-    - Local and Physical Plans
-    - Code Generation
   - Caching and Persistence for Reuse
+  - Tale of Three Data APIs - RDDs, DataFrames and Datasets
+    + Type Safety
+    + Unifying Data Processing Across Libraries
 
 ### Spark SQL/DataFrames - Relational Data Processing with Spark
   - Sharing Metastore and Storage Accounts with Hadoop/Hive Clusters and Spark Clusters
@@ -40,15 +40,23 @@ This repository contains the materials for the course entitled: _Spark with HDIn
   - Integrated APIs for Mixing Relational, Graph, and ML Jobs  
   - Exploring Relational Data with Spark SQL
   - Catalyst Query Optimization
+    - Local and Physical Plans
+    - Code Generation
   - Optimizing Joins in Spark SQL
     + Broadcat Joins versus Merge Joins
   - Creating Custom UDFs for Spark SQL
   - Caching Spark DataFrames, Saving to Parquet
+    + Optimized Columned Storage Through Parquet
+    + Improved Reads and Filters in SparkSQL with Parquet
+      * Better Reads, Better Scans, Lower Disk I/O
+
 
 #### Datasets - Compile Time Strong Typing
+
   - Interoperability with RDDs, DataFrames, and Local Collections
   - Easier Functional Transformations
   - Grouped Operations on Datasets
+
 
 ### Spark Job Execution, Performance Tuning, Tracking and Debugging
   - Jobs, Stages, and Tasks
@@ -57,9 +65,11 @@ This repository contains the materials for the course entitled: _Spark with HDIn
   - Understanding Data Locality
   - Monitoring Spark Jobs with the Spark WebUI
   - Managing Spark Thrift Servers and Changing YARN Resource Allocations
-  - Managing Interactive Livy Sessions and their Resources
   - Monitoring Spark Jobs with Spark UI
   - Viewing Spark Job Graphs, and Understanding Spark Stages
+  - Managing Interactive Livy Sessions and their Resources
+    + Troubleshooting Livy Sessions
+
 
 ### Spark Streaming
   - Creating Spark Streaming Applications Using Spark DStreams APIs
@@ -71,16 +81,6 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     - Using DataFrames and DataSets API to Create Streaming DataFrames and DataSets
   - Window Transformations for Stateful and Stateless Operations
 
-### Spark Machine Learning
-  - MLLib and Spark ML - Understanding API Patterns
-  - Featurizing DataFrames using Transformers
-  - Developing Machine Learning Pipelines with Spark ML
-    - Cross-Validation and Hyperparameter Tuning
-  - Training ML Models on Text Data: Tokenization, TF/IDF, and Topic Modeling with LDA
-  - Using Evaluators to Evaluate Machine Learning Models
-  - Unsupervised Learning and Clustering
-  - Managing Models with ModelDB
-
 ### Spark GraphX/GraphFrames
   - Understanding Graph Analytics and Graph Operators
     - Vertex and Edge Classes
@@ -91,3 +91,58 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     - Reducing Memory Allocation with Serialization
     - Checkpointing
   - Visualizing Networks with SparkR, d3 and Jupyter
+
+### Spark Machine Learning <- R Server
+  - MLLib and Spark ML - Understanding API Patterns
+  - Featurizing DataFrames using Transformers
+  - Developing Machine Learning Pipelines with Spark ML
+    - Cross-Validation and Hyperparameter Tuning
+  - Training ML Models on Text Data: Tokenization, TF/IDF, and Topic Modeling with LDA
+  - Using Evaluators to Evaluate Machine Learning Models
+  - Unsupervised Learning and Clustering
+  - Managing Models with ModelDB
+
+
+#### R Server on Spark
+
+  - Parallel External Memory Algorithms and Distributed Compute Contexts
+  - Using and CRAN R Inside R Server Transforms
+    + Distinctions and Considerations when Using CRAN R
+  - Deploying R Functions and Models with `mrsdeploy`
+    * Configuration and Roadmap
+  - Deploying R Functions and Models with `azureml`  
+  - Defining Your Own PEMA and UDFs with rxExec
+  - Performance Comparisons to SparkML
+    + Feature Comparisons
+
+#### Notes
+
++ keep spark streaming/graphx as high level pieces
++ hands-on for streaming
+  * structured streaming lab
+
+#### Structure
+
++ sparkml - pyspark or scala (1/4 day)
++ r server on spark (1/2 day)
++ ashish: dev skew [HDInsight sandbox]
+  * still TBA, proposal
+  * sandbox skew -> 
+    - most workloads pkgd into single VM
+    - very useful for trainings!
+    - consider for examples
++ auto-scale spark
+  * might be ready for demo
+  * keep it high level
+
+
++ Update on github
++ meet next on thurs
+  * review hdi content
++ *show full schedule*
+  * provide lab timings
+  * less detail than above
++ share any decks
++ techreadytv for additional content
++ 
+
