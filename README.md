@@ -120,6 +120,9 @@ This repository contains the materials for the course entitled: _Spark with HDIn
 + keep spark streaming/graphx as high level pieces
 + hands-on for streaming
   * structured streaming lab
++ need to all prerequisites together
++ daily quetsions
+  10 or so questions
 
 #### Structure
 
@@ -131,6 +134,8 @@ This repository contains the materials for the course entitled: _Spark with HDIn
     - most workloads pkgd into single VM
     - very useful for trainings!
     - consider for examples
+    - no r server on spark
 + auto-scale spark
   * might be ready for demo
   * keep it high level
+
