@@ -1,3 +1,5 @@
 resources/
 *.docx
 spark-notes.md
+.idea/
+*.iml
