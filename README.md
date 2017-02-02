@@ -1,5 +1,7 @@
 # Spark with HDInsight - Enterprise Ready Machine Learning and Interactive Data Analysis at Scale
 
+[OneDrive Link](https://microsoft-my.sharepoint.com/personal/alizaidi_microsoft_com/_layouts/15/guestaccess.aspx?guestaccesstoken=QTtY4r3HFQ2TuFk1rGyn17W6iMVmkrLTjbDMtIQSqMw=&folderid=2_19e38082ce9dd4473954dff36c6410d46&rev=1)
+
 This repository contains the materials for the course entitled: _Spark with HDInsight - Enterprise Ready Machine Learning and Interactive Data Analysis at Scale_.
 
 ## Detailed Syllabus
